@@ -1,11 +1,11 @@
 import { BrowserRouter, Route } from "react-router-dom";
-import Inbox from "./Components/Inbox";
-import SideNav from "./Components/SideNav";
-import Spam from "./Components/Spam";
-import Email from "./Components/Email";
-import Delete from "./Components/Delete";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import Inbox from "./Components/Pages/Inbox";
+import SideNav from "./Components/Basic/SideNav";
+import Spam from "./Components/Pages/Spam";
+import Email from "./Components/Pages/Email";
+import Delete from "./Components/Pages/Delete";
+import Navbar from "./Components/Basic/Navbar";
+import Footer from "./Components/Basic/Footer";
 
 const Routing = () => {
   return (

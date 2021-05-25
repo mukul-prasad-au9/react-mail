@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Count from "./CommonCompo/Count";
-import Radio from "./CommonCompo/Radio";
-import RenderMail from "./CommonCompo/RenderMail";
-const Inbox = () => {
+import Count from "../CommonCompo/Count";
+import Radio from "../CommonCompo/Radio";
+import RenderMail from "../CommonCompo/RenderMail";
+const Delete = () => {
   const [email, setEmail] = useState("");
   const [type, setType] = useState("all");
   useEffect(() => {
@@ -17,12 +17,12 @@ const Inbox = () => {
           <div className="card-header d-flex justify-content-between">
             <Radio type={(e) => setType(e)} />
             <div>
-              <Count data={email} type="inbox" />
+              <Count data={email} type="delete" />
             </div>
           </div>
           <div className="card-body">
             <ul className="list-unstyled">
-              <RenderMail type="inbox" data={email} flag={type} />{" "}
+              <RenderMail type="delete" data={email} flag={type} />{" "}
             </ul>
           </div>
         </div>
@@ -30,4 +30,4 @@ const Inbox = () => {
     </div>
   );
 };
-export default Inbox;
+export default Delete;
